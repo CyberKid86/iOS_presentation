@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VE_SettingsVC">
+            <connections>
+                <outlet property="btnRandomColor" destination="JE9-aR-ddd" id="aWO-5p-aiB"/>
+                <outlet property="btnSaveColor" destination="wuv-da-fhA" id="yJn-g9-MJZ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JE9-aR-ddd">
+                    <rect key="frame" x="20" y="83" width="280" height="62"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Get random color">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTouchDown:" destination="-1" eventType="touchDown" id="Jci-0l-6R7"/>
+                        <action selector="btnTouchUp:" destination="-1" eventType="touchCancel" id="L48-Pd-3KP"/>
+                        <action selector="btnTouchUp:" destination="-1" eventType="touchUpOutside" id="yVY-hr-BVs"/>
+                        <action selector="changeAndSaveAppColor:" destination="-1" eventType="touchUpInside" id="ADb-DO-MYH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wuv-da-fhA">
+                    <rect key="frame" x="20" y="153" width="280" height="62"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Save color as default">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTouchDown:" destination="-1" eventType="touchDown" id="iJ5-Af-aYB"/>
+                        <action selector="btnTouchUp:" destination="-1" eventType="touchCancel" id="A7L-61-nyW"/>
+                        <action selector="btnTouchUp:" destination="-1" eventType="touchUpOutside" id="yGE-MZ-MDA"/>
+                        <action selector="saveColorAsDefault:" destination="-1" eventType="touchUpInside" id="JEi-4g-Son"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
